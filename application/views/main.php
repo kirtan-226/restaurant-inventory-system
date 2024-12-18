@@ -21,7 +21,7 @@
 				foreach ($items as $item) {
 					$itemName = urlencode($item->name);
 					$num++;
-					$item_table = $this->table->add_row($num, $item->name, $item->category, $item->description,$item->quantities,'$'. $item->price,"
+					$item_table = $this->table->add_row($num, $item->name, $item->category, $item->description,$item->quantities,'₹'. $item->price,"
 						<a href='".base_url("item/stock_in/$itemName")."'><button class='btn btn-success btn-sm'>Stock Entry</button></a> 
 						<a href='".base_url("item/update/$itemName")."'><button class='btn btn-primary btn-sm'>Update</button></a> 
 						<a href='".base_url("item/delete/$item->id")."'><button class='btn btn-danger btn-sm'><i class='fa fa-trash'></i> Delete</button></a>");

@@ -66,7 +66,7 @@ class Get extends CI_Controller {
 		";
 		echo "<script>
 
-		$('#amount_due').html('$' +$amount_due);
+		$('#amount_due').html('₹' +$amount_due);
 		</script>";
 		}else {
 			echo "

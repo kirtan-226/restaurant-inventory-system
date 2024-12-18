@@ -49,7 +49,7 @@
 <label class="lead">Total Sales: 
 <?php
 	if($total > 0) {
-		echo '$'.$total;
+		echo '₹'.$total;
 	}
 ?>	
 </label>

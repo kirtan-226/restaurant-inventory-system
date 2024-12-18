@@ -10,7 +10,7 @@
 		$(document).ready(function() {
 			var total = sessionStorage.getItem('total');
 			var cart = sessionStorage.getItem('cart');
-			$('#amount_due').val('$' +total);
+			$('#amount_due').val('₹' +total);
 			$("#cart").val(cart);
 			$("#t").val(total);
 			console.log($("#cart").val());
@@ -26,7 +26,7 @@
 					change = parseInt(payment) - parseInt(total);
 					$("#message").html('<div class="alert alert-success">Full Payment</div>');
 					$("#c").val(change);
-					$("#change").val('$' + change);
+					$("#change").val(₹ + change);
 				}
 				
 			});

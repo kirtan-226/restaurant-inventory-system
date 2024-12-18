@@ -7,8 +7,8 @@ class Sales_model extends CI_Model {
         $inserted = true;
 
         foreach ($data as $sale) {
-            $item_price = trim($sale[3], '$');
-            $sub_total = trim($sale[4], '$');
+            $item_price = trim($sale[3], '₹');
+            $sub_total = trim($sale[4], '₹');
             $arr = array(
                 'item_id' => $sale[0],
                 'item_name' => $sale[1],
